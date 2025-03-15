@@ -16,16 +16,62 @@ body {
 }
 
 
+/* ___________CUSTOME CLASSES___________ */
+a {
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--secondary-color);
+}
+
+.heading {
+    font-size: 40px;
+    color: var(--hover-color);
+    font-weight: 700;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.span {
+    color: var(--hover-color) !important;
+    padding: 0 0 5px;
+    font-size: 40px;
+    font-weight: 700;
+
+}
+
+.sub-span {
+    color: #3f3a3a;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.card-heading {
+    color: var(--hover-color);
+    font-size: 18px;
+}
+
+.card-sub-heading {
+    font-size: 13px;
+    color: #3f3a3a;
+    padding: 2px 0;
+}
+
+/* __________________________________________ */
+
 
 
 :root {
+    --primary-color: #ffffff;
+    --secondary-color: black;
+    --borders: rgba(82, 81, 81, 0.5);
+    --button-color: rgb(0, 183, 255);
     --hover-color: #254e7a;
     --hover-temp-color: #053569;
 }
 
 
 .container {
-    /* border: 2px solid black; */
     width: 90%;
     margin-inline: auto;
 }
@@ -92,6 +138,122 @@ a:hover {
     left: 0 !important;
     bottom: 0 !important;
     width: 100%;
-    background-color: red !important;
     z-index: 1;
+}
+
+/* ______________________________________ */
+
+.intro {
+    padding: 100px 50px;
+    /* border: 2px solid red; */
+}
+
+.intro .container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+.intro .container p:first-child {
+    color: #3f3a3a;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.intro .container h1 {
+    padding: 0 0 5px;
+    font-size: 55px;
+    font-weight: 800;
+    color: var(--hover-color);
+}
+
+.intro .container .parag {
+    color: rgb(90, 89, 89);
+    padding: 10px 0 20px;
+}
+
+.intro .container span {
+    color: rgb(56, 54, 54);
+}
+
+.intro .container .btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: var(--hover-color);
+    color: var(--primary-color);
+}
+
+.intro .container .btn:hover {
+    background-color: var(--hover-temp-color);
+}
+
+.intro .container .image {
+    border: 1px solid #a0c6ee75;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.intro .container .image img {
+    /* border: 12px solid var(--hover-temp-color) ; */
+    width: 90%;
+    object-fit: cover;
+}
+
+
+/* _______________________________- */
+
+
+/*
+============================================= 
+               Service Section  
+=============================================
+*/
+
+.services-section {
+    padding: 100px 0;
+    position: relative;
+    margin: 50px 0 0;
+}
+
+
+/* *******SKILL********** */
+
+.services-section .skill {
+    margin-top: 70px;
+    padding: 20px 0;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+
+}
+
+.services-section .skill-card {
+    padding: 20px;
+    height: 260px;
+    background-color: var(--primary-color);
+    transition: 0.1s ease-in;
+    cursor: pointer;
+    border: 3px solid #fff;
+}
+
+.services-section .skill-card:hover {
+    box-shadow: 0 0 5px 1px hsla(216, 79%, 74%, 0.247);
+    border-bottom: 3px solid var(--hover-color);
+    border-radius: 3px;
+}
+
+.services-section .skill-card .fa-solid,
+.fa-python,
+.fa-js {
+    font-size: 40px;
+    color: var(--hover-color);
+    padding: 25px;
 }
